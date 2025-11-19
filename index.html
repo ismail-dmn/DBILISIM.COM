@@ -41,9 +41,9 @@
 
     <section class="hero" style="background-image: url('img/1.jpg');">
         <div class="hero-content">
-            <h2 class="animate-fade-in-up">Dijital Dönüşümde Güvenilir Ortağınız</h2>
-            <p class="animate-fade-in-up delay-2">IT danışmanlık, yazılım çözümleri ve teknoloji yönetimi ile işletmenizi geleceğe taşıyoruz.</p>
-            <a href="#contact" class="btn-cta animate-fade-in-up delay-3">Ücretsiz Keşif Talep Et</a>
+            <h2>Dijital Dönüşümde Güvenilir Ortağınız</h2>
+            <p>IT danışmanlık, yazılım çözümleri ve teknoloji yönetimi ile işletmenizi geleceğe taşıyoruz.</p>
+            <a href="#contact" class="btn-cta">Ücretsiz Keşif Talep Et</a>
         </div>
     </section>
 
@@ -52,34 +52,6 @@
             <h3>Hakkımızda</h3>
             <p>DBİLİŞİM, işletmelerin dijital dönüşüm süreçlerinde güvenilir bir partnerdir. Yazılım geliştirme, IT altyapı yönetimi ve siber güvenlik alanlarında uzman ekibimizle, verimliliğinizi artıracak çözümler sunuyoruz.</p>
             <p class="signature">DBİLİŞİM Ekibi</p>
-        </div>
-    </section>
-
-    <section id="stats">
-        <div class="container">
-            <h3>Rakamlarla DBİLİŞİM</h3>
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <i class="fas fa-project-diagram"></i>
-                    <p class="number">120+</p>
-                    <p class="label">Başarılı Proje</p>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-users"></i>
-                    <p class="number">50+</p>
-                    <p class="label">Mutlu Müşteri</p>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-clock"></i>
-                    <p class="number">99%</p>
-                    <p class="label">Başarı Oranı</p>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-medal"></i>
-                    <p class="number">10 Yıl</p>
-                    <p class="label">Sektör Deneyimi</p>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -140,5 +112,15 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    </body>
+    <script>
+        const hamburger = document.getElementById('hamburger-btn');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        });
+    </script>
+</body>
 </html>
