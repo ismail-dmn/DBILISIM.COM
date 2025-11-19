@@ -1,0 +1,44 @@
+/* -------------------- HERO SECTION (ANA BANNER) -------------------- */
+.hero {
+    height: 100vh;
+    /* Gönderdiğiniz resmin URL'sini buraya ekledim */
+    background-image: url('https://i.imgur.com/lP0B62R.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 60px; /* Header yüksekliği */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Metnin okunabilirliğini artırmak için hafif koyu overlay (Turuncu tema ile uyumlu hale getirildi) */
+    background: rgba(0, 0, 0, 0.65); /* Daha koyu bir kaplama */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+    /* İsterseniz başlıkta hafif bir turuncu vurgu da yapabiliriz */
+    /* text-shadow: 2px 2px 5px rgba(255, 87, 34, 0.6); */ 
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+/* Diğer CSS kodları aynı kalır */
