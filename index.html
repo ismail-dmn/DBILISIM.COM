@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DBİLİŞİM - IT Danışmanlık ve Teknoloji Çözümleri</title>
+    <title>DBİLİŞİM - Profesyonel IT & Teknoloji Çözümleri</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container header-container">
 <svg width="400" height="100" xmlns="http://www.w3.org/2000/svg">
   <!-- DB kutusu -->
   <rect x="0" y="20" width="70" height="60" rx="10" fill="#0A2A4A"/>
@@ -24,98 +25,151 @@
   <text x="79" y="59" font-family="Arial" font-size="43" fill="#0A2A4A" font-weight="bold">dbilisim</text>
 
   <!-- IT & SOFTWARE SOLUTIONS: kırmızı renge çevrildi -->
-  <text x="153" y="76" font-family="Arial" font-size="11" fill="#CC0000" text-anchor="middle" font-weight="bold">IT &amp; SOFTWARE SOLUTIONS</text>
+  <text x="155" y="76" font-family="Arial" font-size="11" fill="#CC0000" text-anchor="middle" font-weight="bold">IT &amp; SOFTWARE SOLUTIONS</text>
 </svg>
 
-            
-            <button class="hamburger" id="hamburger-btn">
+            <button class="hamburger" id="hamburger-btn" aria-label="Menüyü Aç">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
 
-            <nav>
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="#">Ana Sayfa</a></li>
-                    <li><a href="#services">Hizmetler</a></li>
-                    <li><a href="#about">Hakkımızda</a></li>
-                    <li><a href="#contact">İletişim</a></li>
-                    
-                    <div class="mobile-social-links">
-                        <a href="#" class="phone-icon-menu"><i class="fas fa-phone"></i></a>
-                        <a href="#" class="instagram-icon-menu"><i class="fab fa-instagram"></i></a>
-                    </div>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link active">Ana Sayfa</a></li>
+                    <li><a href="#services" class="nav-link">Hizmetler</a></li>
+                    <li><a href="#about" class="nav-link">Hakkımızda</a></li>
+                    <li><a href="#contact" class="nav-link">İletişim</a></li>
                 </ul>
+                <div class="mobile-social">
+                    <a href="tel:05385050002"><i class="fas fa-phone"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
             </nav>
         </div>
     </header>
 
     <section class="hero" style="background-image: url('img/1.jpg');">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h2>Dijital Dönüşümde Güvenilir Ortağınız</h2>
-            <p>IT danışmanlık, yazılım çözümleri ve teknoloji yönetimi ile işletmenizi geleceğe taşıyoruz.</p>
-            <a href="#contact" class="btn-cta">Ücretsiz Keşif Talep Et</a>
+            <span class="hero-badge">Teknoloji Çözüm Ortağınız</span>
+            <h1>İşletmenizi Dijital Geleceğe Taşıyoruz</h1>
+            <p>IT danışmanlık, güvenlik sistemleri ve özel yazılım çözümleriyle verimliliğinizi maksimuma çıkarın.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-cta">Hemen Teklif Al</a>
+                <a href="#services" class="btn-outline">Hizmetleri İncele</a>
+            </div>
         </div>
     </section>
 
     <section id="about">
-        <div class="container apropos-content">
-            <h3>Hakkımızda</h3>
-            <p>DBİLİŞİM, işletmelerin dijital dönüşüm süreçlerinde güvenilir bir partnerdir. Yazılım geliştirme, IT altyapı yönetimi ve siber güvenlik alanlarında uzman ekibimizle, verimliliğinizi artıracak çözümler sunuyoruz.</p>
-            <p class="signature">DBİLİŞİM Ekibi</p>
+        <div class="container">
+            <div class="section-header">
+                <h3>Hakkımızda</h3>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <p>DBİLİŞİM, işletmelerin dijital dönüşüm süreçlerinde güvenilir bir partnerdir. Yazılım geliştirme, IT altyapı yönetimi ve güvenlik sistemleri alanlarında uzman ekibimizle, iş süreçlerinizi hızlandıran ve maliyetlerinizi düşüren çözümler sunuyoruz.</p>
+                <p class="signature">DBİLİŞİM Ekibi</p>
+            </div>
         </div>
     </section>
 
     <section id="services">
         <div class="container">
-            <h3>Hizmetlerimiz</h3>
+            <div class="section-header">
+                <h3>Hizmetlerimiz</h3>
+                <p class="subtitle">Size özel uçtan uca teknoloji çözümleri</p>
+                <div class="divider"></div>
+            </div>
+            
             <div class="service-grid">
                 <div class="service-item">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="IT Danışmanlık">
+                    <div class="icon-box"><i class="fas fa-laptop-medical"></i></div>
                     <h4>IT Danışmanlık</h4>
-                    <p>Bilgisayar, Server ve Çevre birimleri üzerinde bulunan işletim sistemleri ve paket programlarında yaşanılan sorunlar için hizmetlerimiz “uzaktan” veya “yerinde” destek ile hizmet verilmektedir.</p>
+                    <p>Bilgisayar, sunucu ve ağ altyapınızdaki sorunlar için uzaktan veya yerinde hızlı teknik destek ve bakım hizmetleri.</p>
                 </div>
+                
                 <div class="service-item">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Yazılım">
+                    <div class="icon-box"><i class="fas fa-code"></i></div>
                     <h4>Yazılım Geliştirme</h4>
-                    <p>Web, mobil ve kurumsal çözümler.</p>
+                    <p>İş akışınızı hızlandıran, şirketinize özel masaüstü, web ve mobil tabanlı kurumsal yazılım çözümleri.</p>
                 </div>
+
                 <div class="service-item">
-                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Güvenlik">
+                    <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
                     <h4>Siber Güvenlik</h4>
-                    <p>Veri koruma ve risk yönetimi.</p>
+                    <p>Verilerinizi fidye yazılımlarına ve siber tehditlere karşı koruyan firewall ve antivirüs çözümleri.</p>
                 </div>
+
                 <div class="service-item">
-                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Bulut">
+                    <div class="icon-box"><i class="fas fa-video"></i></div>
+                    <h4>Güvenlik Kamera Sistemleri</h4>
+                    <p>İşletmenizi 7/24 izleyebileceğiniz, yüksek çözünürlüklü IP kamera ve CCTV güvenlik sistemleri kurulumu.</p>
+                </div>
+
+                <div class="service-item">
+                    <div class="icon-box"><i class="fas fa-network-wired"></i></div>
+                    <h4>IP Santral Çözümleri</h4>
+                    <p>Şirket içi ve dışı iletişimi yönetmenizi sağlayan, maliyet etkin ve gelişmiş özellikli dijital santral kurulumu.</p>
+                </div>
+
+                <div class="service-item">
+                    <div class="icon-box"><i class="fas fa-paint-brush"></i></div>
+                    <h4>Web Tasarım</h4>
+                    <p>Markanızı dijital dünyada en iyi yansıtan, mobil uyumlu (responsive), SEO dostu ve modern web siteleri.</p>
+                </div>
+                
+                <div class="service-item">
+                    <div class="icon-box"><i class="fas fa-cloud"></i></div>
                     <h4>Bulut Çözümleri</h4>
-                    <p>Güvenli ve ölçeklenebilir altyapılar.</p>
+                    <p>Verilerinize her yerden güvenle erişebileceğiniz esnek yedekleme ve bulut sunucu altyapıları.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <div class="container contact-flex">
-            <div class="contact-info">
-                <h4>İletişim Bilgileri</h4>
-                <p><i class="fas fa-map-marker-alt"></i> Merve Mh. Ziyaülhak Cd. No:18A/2 Sancaktepe / İstanbul</p>
-                <p><i class="fas fa-phone"></i> 0538 505 00 02</p>
-                <p><i class="fas fa-envelope"></i> info@dbilisim.com</p>
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h4>İletişime Geçin</h4>
+                    <p>Projeleriniz için ücretsiz keşif ve danışmanlık hizmeti alın.</p>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Merve Mh. Ziyaülhak Cd. No:18A/2 Sancaktepe / İstanbul</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>0538 505 00 02</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@dbilisim.com</span>
+                    </div>
+                    
+                    <div class="social-buttons">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
                 
-                <div class="social-buttons-contact">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.5!2d29.0!3d41.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAwJzAwLjAiTiAyOcKwMDAnMDAuMCJF!5e0!3m2!1str!2str!4v1600000000000!5m2!1str!2str" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-             <div class="google-map" style="flex:1;">
-                </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>© 2025 DBİLİŞİM. Tüm hakları saklıdır. | KVKK ve Gizlilik Politikası</p>
+            <p>© 2025 DBİLİŞİM. Tüm hakları saklıdır.</p>
+            <div class="footer-links">
+                <a href="#">Gizlilik Politikası</a>
+                <a href="#">KVKK Aydınlatma Metni</a>
+            </div>
         </div>
     </footer>
 
@@ -123,27 +177,6 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <script>
-        const hamburger = document.getElementById('hamburger-btn');
-        const navLinks = document.getElementById('nav-links');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.classList.toggle('active');
-            document.body.classList.toggle('menu-open');
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
